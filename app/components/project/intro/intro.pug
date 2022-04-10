@@ -1,0 +1,14 @@
+mixin intro(content, params)
+  section.intro&attributes(content.attr)&attributes(attributes)
+    +intro__bg(content.bg)
+    .intro__header
+      +custom-menu(copyright.menu)
+      +button(content.lkButton).intro__lk-button
+    .intro__content 
+      h2.intro__title !{content.title}  
+      p.intro__text !{content.text}
+    
+    block
+
+mixin intro__bg(content, params)
+  .intro__bg&attributes(content.attr)&attributes(attributes)

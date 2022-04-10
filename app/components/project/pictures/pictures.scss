@@ -1,0 +1,65 @@
+.pictures {
+  // Константы
+  @mixin mod($mod) {
+    @include modifier("pictures", $mod){
+      @content;
+    }
+  }
+
+  &__content {
+    @include wrapper();
+    @include option(padding, 100 0, 50 0);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    @include option(height, 770);
+    @include MOBILE {
+      display: none;
+    }
+  }
+
+  &__item {
+    @include option(width, 370, 300);
+    &_1 {
+      @include option-desk(height, 530);
+    }
+    &_2 {
+      @include option-desk(height, 210);
+    }
+    &_3 {
+      @include option-desk(height, 210);
+    }
+    &_4 {
+      @include option-desk(height, 530);
+    }
+    &_5 {
+      @include option-desk(height, 370);
+    }
+    &_6 {
+      @include option-desk(height, 370);
+    }
+    img {
+      display: block;
+      height: 100%;
+      @include MOBILE {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__carousel {
+    @include NOT-MOB {
+      display: none;
+    }
+  }
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+}

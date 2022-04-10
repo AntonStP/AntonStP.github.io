@@ -1,0 +1,50 @@
+.intro {
+  // Константы
+  @mixin mod($mod) {
+    @include modifier("intro", $mod){
+      @content;
+    }
+  }
+
+  background: #2F1893;
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center / cover;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    @include option(padding, 20 35, 15 10);
+    background: $WHITE;
+    @include MOBILE {
+      justify-content: space-between;
+    }
+  }
+
+  &__content {
+    @include wrapper();
+    @include option(padding, 480 99px 104px, 100 0 169);
+    color: $WHITE;
+  }
+
+  &__title {
+    @include option(margin, 0 0 28px);
+    @include option(font-size, 58, 33);
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  &__text {
+    @include option-desk(width, 670);
+    @include option(font-size, 22, 15);
+    line-height: 1.4;  
+  }
+}

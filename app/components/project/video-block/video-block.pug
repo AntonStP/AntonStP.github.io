@@ -1,0 +1,22 @@
+mixin video-block(content, params)
+  section.video-block&attributes(content.attr)&attributes(attributes)
+    .video-block__content
+      h2.video-block__title !{content.title}
+      +video-block__item(content.mainVideo)
+      .video-block__list
+        +pug-list(content.videos, "video-block__item")
+    block
+
+mixin video-block__item(content, params)
+  .video-block__item&attributes(content.attr)&attributes(attributes)
+    .video-block__item-preview 
+      +picture(content.preview)
+      .video-block__item-play
+        //- .video-block__item-play
+          //- +picture(content.preview)
+    if (content.title && content.description)  
+      .video-block__item-info   
+        .video-block__item-title !{content.title}
+        .video-block__item-text !{content.description}
+
+      

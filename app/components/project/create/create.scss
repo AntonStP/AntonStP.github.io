@@ -1,0 +1,107 @@
+.create {
+  // Константы
+  @mixin mod($mod) {
+    @include modifier("create", $mod){
+      @content;
+    }
+  }
+
+  @mixin item($mod) {
+    @include modifier("create__item", $mod){
+      @content;
+    }
+  }
+
+
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+    @include option-desk(width, 1400);
+    @include MOBILE {
+      display: none;
+    }
+    height: 100%;
+    &-image {
+      position: absolute;
+      right: 0;
+      top: 0;
+      @include option(width, 485);
+      height: 100%;
+      background: no-repeat center / cover;
+    }
+  }
+
+  &__content {
+    position: relative;
+    @include option(width, 1400, 320);
+    margin: 0 auto;
+    @include option(padding, 124 485 92 113, 50 10 30);
+    box-sizing: border-box;
+  }
+
+  &__title {
+    @extend %H2;
+    width: 70%;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #1E0E62;
+    margin: 0;
+    @include MOBILE {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    width: 70%;
+    @include option(margin, 28 0 53, 30 0 40);
+    @include option(font-size, 22, 15);
+    font-weight: 500;
+    color: rgba(21, 20, 57, 0.4);
+    line-height: 1.4;
+    @include MOBILE {
+      width: 100%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    @include option(margin, 67 0 0, 35 0 0);
+    @include MOBILE {
+      flex-direction:  column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include option(width, 270);
+    &:first-of-type {
+      @include option(margin, 0 80 0 0, 0 0 40 0);
+    }
+    &-icon {
+      @include option(width, 54, 54*0.7);
+      @include option(height, 54, 54*0.7);
+      
+    }
+    &-name {
+      @include option(margin, 30 0 30, 15 0 15);
+      @include option(font-size,22, 20);
+      color: #1E0E62;
+    }
+    &-text {
+      @include option(font-size, 16, 13);
+      color: rgba(21, 20, 57, 0.4);
+      line-height: 1.6;
+    }
+    @include MOBILE {
+      width: 70%;
+      align-items: center;
+    }
+  }
+
+}

@@ -1,0 +1,13 @@
+extends components/project/custom-page/custom-page
+
+append constants
+  -const ASSET_PREFIX = "";
+  -const metaViewport= "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover";
+
+block content
+  +intro(copyright.intro)
+  +pictures(copyright.picturesBlock)
+  +video-block(copyright.videoBlock)
+  +create(copyright.create)
+  +rate(copyright.rate)
+

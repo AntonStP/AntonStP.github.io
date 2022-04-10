@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'DMSans';
+  src: local('DMSans Regular'), local('DMSans-Regular'),
+  url('DMSans-Regular.woff2') format('woff2'),
+  url('DMSans-Regular.woff') format('woff'),
+  url('DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: local('DMSans Medium'), local('DMSans-Medium'),
+  url('DMSans-Medium.woff2') format('woff2'),
+  url('DMSans-Medium.woff') format('woff'),
+  url('DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: local('DMSans Bold'), local('DMSans-Bold'),
+  url('DMSans-Bold.woff2') format('woff2'),
+  url('DMSans-Bold.woff') format('woff'),
+  url('DMSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+

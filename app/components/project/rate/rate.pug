@@ -1,0 +1,28 @@
+mixin rate(content, params)
+  .rate&attributes(content.attr)&attributes(attributes)
+    .rate__content 
+      h2.rate__title !{content.title}
+      +rate__choice(content.choice)
+      .rate__list 
+        +pug-list(content.list, "rate__card")
+
+    block
+
+
+mixin rate__choice(content, params)
+  .rate__choice&attributes(attributes)
+    .rate__choice-text.rate__choice-text_left !{content.text1}
+    input.rate__choice-input(id="choice-indicator" type="checkbox")
+    label.rate__choice-label(for="choice-indicator")
+    .rate__choice-text.rate__choice-text_right !{content.text2}
+  
+mixin rate__card(content, params)
+  .rate__card&attributes(content.attr)&attributes(attributes)
+    .rate__card-image 
+      +picture(content.image)
+    .rate__card-content
+      .rate__card-head 
+        .rate__card-name !{content.name}
+        .rate__card-cost !{content.cost}
+      .rate__card-text !{content.text}
+      +button(content.button).rate__card-button  

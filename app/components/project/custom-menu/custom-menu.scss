@@ -1,0 +1,73 @@
+.custom-menu {
+  @mixin mod($mod) {
+    @include modifier("custom-menu", $mod){
+      @content;
+    }
+  }
+  @mixin item-mod($mod) {
+    @include modifier("custom-menu__item", $mod){
+      @content;
+    }
+  }
+
+  width: auto;
+  @include option-mob(width, 200px);
+  font-family: $BASE-FONT;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  pointer-events: none;
+  list-style: none;
+  margin: 0;
+  transition: all .3s ease-in-out;
+  z-index: $z-header;
+  background: $WHITE;
+  &_bg {
+    background: transparent;
+  }
+  
+
+  &__item {
+    @include option(margin-right, 37, 10);
+    text-align: right;
+    color: $BLACK;
+    position: relative;
+    text-decoration: none;
+    @include option(font-size, 15, 10);
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease-in-out;
+    pointer-events: all;
+    white-space: nowrap;
+    z-index: 1;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 0;
+      @include option(bottom, -5);
+      @include option(height, 1);
+      background: #e5545b;
+      width: 0;
+      right: 0;
+      left: auto;
+      transition: width 0.3s 0.1s ease-in-out;
+      z-index: -1;
+    }
+
+    @include HOVER{
+      &:hover{
+        &::after {
+          right: auto;
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    @include item-mod(active){
+    }
+  }
+
+}

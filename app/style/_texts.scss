@@ -1,0 +1,16 @@
+/**
+ * Обычный текст
+ */
+%DEFAULT {
+  font-family: $BASE-FONT;
+  @include option(font-size, 16, 12);
+  @include option(line-height, 22, 16);
+  color: #000000;
+}
+
+%H2{
+  @include option(font-size, 42, 30);
+  font-weight: bold;
+}
+
+

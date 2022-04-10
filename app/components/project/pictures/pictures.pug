@@ -1,0 +1,14 @@
+mixin pictures(content, params)
+  section.pictures&attributes(content.attr)&attributes(attributes)
+    .pictures__content 
+      .pictures__list 
+        +pug-list(content.list,"pictures__item")
+      +carousel(content.list, "pictures__item")(data-carousel="picturesCarousel").pictures__carousel  
+
+
+    block
+
+
+mixin pictures__item(content, params)
+  .pictures__item(class=`pictures__item_${content.index}`)&attributes(content.attr)&attributes(attributes)
+    +picture(content.image)

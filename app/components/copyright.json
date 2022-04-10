@@ -1,0 +1,439 @@
+{
+    "og": {
+      "title": "test",
+      "description": "test-description",
+      "canonical_url": "",
+      "image": {
+        "default": {
+          "val": "",
+          "width": 1200,
+          "height": 630
+        }
+      }
+    },
+  
+    "menu": [
+      {
+        "attr": {
+          "class": "custom-menu__item_1",
+          "href": "#pictures"
+        },
+        "label": "Изображения"
+      },
+      {
+        "attr": {
+          "class": "custom-menu__item_2",
+          "href": "#video-block"
+        },
+        "label": "Видео"
+      },
+      {
+        "attr": {
+          "class": "custom-menu__item_3",
+          "href": "#create"
+        },
+        "label": "3D модели"
+      }
+    ],
+  
+    "intro": {
+      "attr": {
+        "id": "intro"
+      },
+      "bg": {
+        "attr": {
+          "data-bgset": "images/intro/bg-m.webp [type:image/webp] [(max-width:1023px)]| images/intro/bg-m.jpeg [(max-width:1023px)]| images/intro/bg.webp [type:image/webp][(min-width: 1024px)]| images/intro/bg.jpeg [(min-width: 1024px)]",
+          "class": "lazyload"
+        },
+        "src": "images/intro/bg"
+      },
+      "title": "Превратите свои идеи в&nbsp;реальные достижения",
+      "text": "Теперь у&nbsp;вас под рукой всегда есть нужные изображения, видео, музыка, 3D-модели, редакционные материалы и&nbsp;авторские продукты.",
+      "lkButton": {
+        "tag": "a",
+        "text": "Войти", 
+        "attr": {
+          "href": "#",
+          "class": "button_lk"
+        }
+      }
+    },
+  
+    "picturesBlock": {
+      "attr": {
+        "id": "pictures"
+      },
+      "list": [
+        {
+          "index": "1",
+          "image": {
+            "list": [
+              {
+                "data-srcset": "images/pictures/item-1-m.webp",
+                "type": "image/webp",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/pictures/item-1-m.png",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/pictures/item-1.webp",
+                "type": "image/webp"
+              }
+            ],
+            "img": {
+              "data-src": "images/pictures/item-1.png",
+              "class": "lazyload",
+              "alt": "random-image"
+            }
+          }
+        },
+        {
+          "index": "2",
+          "image": {
+            "list": [
+              {
+                "data-srcset": "images/pictures/item-2-m.webp",
+                "type": "image/webp",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/pictures/item-2-m.png",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/pictures/item-2.webp",
+                "type": "image/webp"
+              }
+            ],
+            "img": {
+              "data-src": "images/pictures/item-2.png",
+              "class": "lazyload",
+              "alt": "random-image"
+            }
+          }
+        },
+        {
+          "index": "3",
+          "image": {
+            "list": [
+              {
+                "data-srcset": "images/pictures/item-3-m.webp",
+                "type": "image/webp",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/pictures/item-3-m.png",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/pictures/item-3.webp",
+                "type": "image/webp"
+              }
+            ],
+            "img": {
+              "data-src": "images/pictures/item-3.png",
+              "class": "lazyload",
+              "alt": "random-image"
+            }
+          }
+        },
+        {
+          "index": "4",
+          "image": {
+            "list": [
+              {
+                "data-srcset": "images/pictures/item-4-m.webp",
+                "type": "image/webp",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/pictures/item-4-m.png",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/pictures/item-4.webp",
+                "type": "image/webp"
+              }
+            ],
+            "img": {
+              "data-src": "images/pictures/item-4.png",
+              "class": "lazyload",
+              "alt": "random-image"
+            }
+          }
+        },
+        {
+          "index": "5",
+          "image": {
+            "list": [
+              {
+                "data-srcset": "images/pictures/item-5-m.webp",
+                "type": "image/webp",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/pictures/item-5-m.png",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/pictures/item-5.webp",
+                "type": "image/webp"
+              }
+            ],
+            "img": {
+              "data-src": "images/pictures/item-5.png",
+              "class": "lazyload",
+              "alt": "random-image"
+            }
+          }
+        },
+        {
+          "index": "6",
+          "image": {
+            "list": [
+              {
+                "data-srcset": "images/pictures/item-6-m.webp",
+                "type": "image/webp",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/pictures/item-6-m.png",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/pictures/item-6.webp",
+                "type": "image/webp"
+              }
+            ],
+            "img": {
+              "data-src": "images/pictures/item-6.png",
+              "class": "lazyload",
+              "alt": "random-image"
+            }
+          }
+        }
+      ]
+    },
+
+    "videoBlock": {
+      "attr": {
+        "id": "video-block"
+      },
+      "title": "Поможем сделать ваш продукт уникальным",
+      "mainVideo": {
+        "attr": {
+          "class": "video-block__item_main"
+        },
+        "preview": {
+          "list": [
+            {
+              "data-srcset": "images/video-block/preview-1-m.webp",
+              "type": "image/webp",
+              "media": "(max-width:1023px)"
+            },
+            {
+              "data-srcset": "images/video-block/preview-1-m.png",
+              "media": "(max-width:1023px)"
+            },
+            {
+              "data-srcset": "images/video-block/preview-1.webp",
+              "type": "image/webp"
+            }
+          ],
+          "img": {
+            "data-src": "images/video-block/preview-1.png",
+            "class": "lazyload",
+            "alt": "random-image"
+          }
+        },
+        "title": false,
+        "description": false,
+        "data-modal": "#"
+      },
+      "videos": [
+        {
+          "attr": {
+            "class": "video-block__item_1"
+          },
+          "preview": {
+            "list": [
+              {
+                "data-srcset": "images/video-block/preview-2.webp",
+                "type": "image/webp"
+              }
+            ],
+            "img": {
+              "data-src": "images/video-block/preview-2.png",
+              "class": "lazyload",
+              "alt": "random-image"
+            }
+          },
+          "title": "эксклюзив",
+          "description": "Используйте уникальный контент в&nbsp;своих целях",
+          "data-modal": ""
+        },
+        {
+          "attr": {
+            "class": "video-block__item_2"
+          },
+          "preview": {
+            "list": [
+              {
+                "data-srcset": "images/video-block/preview-3.webp",
+                "type": "image/webp"
+              }
+            ],
+            "img": {
+              "data-src": "images/video-block/preview-3.png",
+              "class": "lazyload",
+              "alt": "random-image"
+            }
+          },
+          "title": "высокое качество",
+          "description": "Изображения и&nbsp;видео в&nbsp;высочайшем качестве",
+          "data-modal": ""
+        }
+      ]
+    },
+  
+    "create": {
+      "attr": {
+        "id": "create"
+      },
+      "bg": {
+        "attr": {
+          "data-bgset": "images/1px.png [type:image/webp][(max-width: 1023px)]images/create/bg.webp [type:image/webp][(min-width: 1024px)]| images/create/bg.jpeg [(min-width: 1024px)]",
+          "class": "lazyload"
+        },
+        "src": "images/intro/bg"
+      },
+      "title": "Создавайте свои сайты в&nbsp;пару кликов",
+      "text": "Мы&nbsp;создали новый продукт, который поможет дизайнерам, разработчикам и&nbsp;небольшим стартапам создать свой сайт быстро и&nbsp;просто.",
+      "button": {
+        "tag": "a",
+        "text": "Подробнее",
+        "attr": {
+          "href": "#",
+          "target": "_blank"
+        }
+      },
+      "list": [
+        {
+          "attr": {
+            "class": "create__item_bootstrap"
+          },
+          "icon": {
+            "img": {
+              "data-src": "images/create/icon-1.svg",
+              "class": "lazyload",
+              "alt": "icon"
+            }
+          },
+          "name": "Bootstrap 4",
+          "text": "HTML верстка основана на&nbsp;одном из&nbsp;самых распространенных и&nbsp;надежных фреймворков"
+        },
+        {
+          "attr": {
+            "class": "create__item_html-css"
+          },
+          "icon": {
+            "img": {
+              "data-src": "images/create/icon-2.svg",
+              "class": "lazyload",
+              "alt": "icon"
+            }
+          },
+          "name": "HTML5&nbsp;&amp; CSS3",
+          "text": "Для достижения наилучшего результата мы&nbsp;использовали только проверенные временем&nbsp;технологии."
+        }
+      ]
+    },
+  
+    "rate": {
+      "attr": {
+        "id": "rate"
+      },
+      "title": "У нас есть два тарифа",
+      "choice": {
+        "text1": "Месяц",
+        "text2": "Год"
+      },
+      "list": [
+        {
+          "image": {
+            "list": [
+              {
+                "data-srcset": "images/rate/image-1-m.webp",
+                "type": "image/webp",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/rate/image-1-m.png",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/rate/image-1.webp",
+                "type": "image/webp"
+              }
+            ],
+            "img": {
+              "data-src": "images/rate/image-1.png",
+              "class": "lazyload",
+              "alt": "random-image"
+            }
+          },
+          "name": "Оптимальный",
+          "cost": "500₽",
+          "text": "Редактируйте фото и&nbsp;видео в&nbsp;режиме онлайн. Создавайте одностраничные сайты из&nbsp;готовых компонентов",
+          "button": {
+            "tag": "a",
+            "text": "Начать бесплатно",
+            "attr": {
+              "class": "button_card",
+              "href": "#",
+              "target": "_blank"  
+            }
+          }
+        },
+        {
+          "image": {
+            "list": [
+              {
+                "data-srcset": "images/rate/image-2-m.webp",
+                "type": "image/webp",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/rate/image-2-m.png",
+                "media": "(max-width:1023px)"
+              },
+              {
+                "data-srcset": "images/rate/image-2.webp",
+                "type": "image/webp"
+              }
+            ],
+            "img": {
+              "data-src": "images/rate/image-2.png",
+              "class": "lazyload",
+              "alt": "random-image"
+            }
+          },
+          "name": "Профи",
+          "cost": "1000₽",
+          "text": "Редактируйте фото и&nbsp;видео в&nbsp;режиме онлайн. Создавайте одностраничные и&nbsp;многостраничные сайты из&nbsp;готовых компонентов,",
+          "button": {
+            "tag": "a",
+            "text": "Начать бесплатно",
+            "attr": {
+              "class": "button_card",
+              "href": "#",
+              "target": "_blank"  
+            }
+          }
+        }
+      ]
+    }
+  }
+  

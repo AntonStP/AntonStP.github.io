@@ -1,0 +1,22 @@
+mixin create(content, params)
+  section.create&attributes(content.attr)&attributes(attributes)
+    .create__bg
+      +create__bg-image(content.bg)
+    .create__content 
+      h2.create__title !{content.title}
+      .create__text !{content.text}
+      +button(content.button).create__button
+      .create__list
+        +pug-list(content.list, "create__item")
+
+    block
+
+mixin create__bg-image(content, params)
+  .create__bg-image&attributes(content.attr)&attributes(attributes)
+
+mixin create__item(content, params)
+  .create__item&attributes(content.attr)&attributes(attributes)
+    .create__item-icon 
+      +picture(content.icon)
+    .create__item-name !{content.name}
+    .create__item-text !{content.text}
