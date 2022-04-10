@@ -6,6 +6,7 @@ class Create extends Plugin {
   }
 }
 
+
 registerPlugins(
   {
     "name": "create",
